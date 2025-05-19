@@ -10,4 +10,4 @@ services:
 networks:
   default:
     external: true
-    name: local-net
+    name: reverse-proxy
