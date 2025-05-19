@@ -1,0 +1,13 @@
+services:
+  api-music:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: api-music
+    container_name: api-music
+    restart: unless-stopped
+
+networks:
+  default:
+    external: true
+    name: local-net
